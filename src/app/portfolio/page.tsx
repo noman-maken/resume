@@ -59,7 +59,7 @@ const portfolio = () =>{
             <div className="content">
                 <div className="title">
                     <div className="icon">
-                        <i className="fa fa-light fa-briefcase"></i>
+                    < FaBriefcase/>
                     </div>
                     <h2>Portfolio</h2>
                 </div>
