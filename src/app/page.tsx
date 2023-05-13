@@ -201,7 +201,7 @@ export default function Home() {
                             <div className="progress"></div>
                         </div>
                     </div>
-                    <div className="ai">
+                    <div className="nextjs">
                         <h3 className="skill-title">Next JS</h3>
                         <div className="progress-outline">
                             <div className="progress"></div>

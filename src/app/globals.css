@@ -356,6 +356,10 @@ li::marker {
     width: 60%
 }
 
+.nextjs .progress {
+  width: 30%
+}
+
 .php .progress {
     width: 90%
 }
