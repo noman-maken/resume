@@ -1,27 +1,524 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap);
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: Roboto, sans-serif
+}
+
+:root {
+    --main: #1C3244;
+    --light: #EBEBEB;
+    --white: #ffffff;
+    --orange: #F3B942;
+    --light-orange: #f3b8427e;
+    --black: #000000
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    word-break: break-all;
+    transition: color .3s
+}
+
+a:hover {
+    color: var(--orange)
+}
+
+ul {
+    padding-left: 24px
+}
+
+address {
+    transition: color .3s;
+    font-size: 16px;
+    font-style: normal;
+    cursor: pointer
+}
+
+address:hover {
+    color: var(--orange)
+}
+
+p {
+    font-size: 16px;
+    color: var(--main)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--main)
+}
+
+li::marker {
+    color: var(--orange);
+    font-size: 30px
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white)
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main);
+    border-radius: 15px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orange)
+}
+
+#resume {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 15px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+    position: relative;
+}
+
+#header,
+#main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+#header {
+    position: relative
+}
+
+#header:after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    z-index: 1;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-color: var(--orange);
+    border: 5px solid var(--white);
+    right: calc(30% - 14px);
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    animation: scale 2s infinite linear
+}
+
+@keyframes scale {
+    from {
+        background-color: var(--main)
+    }
+
+    top {
+        background-color: var(--orange)
+    }
+}
+
+.about {
+    width: calc(70% - 10px);
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center
+}
+
+.profile {
+    width: 200px;
+    flex-shrink: 0
+}
+
+.profile .outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 168px;
+    width: 168px;
+    border-radius: 50% 50% 10% 50%;
+    border: 5px solid var(--light-orange)
+}
+
+.profile img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 50% 50% 9% 50%;
+    border: 5px solid var(--orange)
+}
+
+.summary {
+    font-family: Rubik, sans-serif
+}
+
+.summary h1 {
+    font-size: 30px;
+    font-weight: 500
+}
+
+.summary>span {
+    color: var(--orange);
+    display: block;
+    margin-bottom: 10px
+}
+
+.info {
+    width: 30%;
+    background-color: #1c3244;
+    color: #fff
+}
+
+.info :not(i) {
+    font-family: Rubik, sans-serif
+}
+
+.info ul {
+    list-style: none;
+    padding-left: 0
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    column-gap: 15px
+}
+
+.info li+li {
+    margin-top: 10px
+}
+
+.icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0
+}
+
+.icon FontAwesomeIcon {
+    color: var(--orange);
+    font-size: 20px
+}
+
+#main .icon {
+    border-color: var(--main)
+}
+
+#main .icon i {
+    color: var(--main)
+}
+
+.icon img {
+    width: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px
+}
+
+.content {
+    width: calc(70% - 10px);
+    background-color: #fff;
+    border-left: 1px solid var(--light-orange);
+    border-bottom: 1px solid var(--light-orange)
+}
+
+.experiences {
+    margin-bottom: 40px
+}
+
+.experience+.experience {
+    margin-top: 20px
+}
+
+.universal-title {
+    font-family: Rubik, sans-serif;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.edu-box .universal-name:after,
+.universal-date {
+    display: block;
+    color: var(--orange);
+    font-size: 14px;
+    margin-top: 3px
+}
+
+.universal-name {
+    font-family: Rubik, sans-serif;
+    font-weight: 400
+}
+
+.universal-name a {
+    color: var(--orange);
+    margin-left: 5px
+}
+
+.edu-box .universal-name:after {
+    content: attr(data-text);
+    display: inline-block
+}
+
+.skills-list {
+    row-gap: 10px;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    max-width: 500px
+}
+
+.skills-list li {
+    display: inline-block
+}
+
+.skills-list li:before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    margin-right: 15px
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #ebebeb
+}
+
+.skills>*+* {
+    margin-top: 20px
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main);
+    margin-bottom: 5px
+}
+
+.progress-outline {
+    height: 15px;
+    width: 100%;
+    border: 2px solid var(--main)
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--main)
+}
+
+.html .progress {
+    width: 100%
+}
+
+.css .progress {
+    width: 100%
+}
+
+.javascript .progress {
+    width: 95%
+}
+
+.ai .progress {
+    width: 60%
+}
+
+.php .progress {
+    width: 90%
+}
+
+.laravel .progress {
+    width: 85%
+}
+
+.sql .progress {
+    width: 95%
+}
+
+.wp .progress {
+    width: 95%
+}
+
+.interest-title {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    display: flex;
+    align-items: center
+}
+
+.interest-title i {
+    margin-right: 10px;
+    font-size: 30px;
+    color: var(--main)
+}
+
+.education,
+.interest {
+    margin-top: 40px
+}
+
+.about,
+.content,
+.info,
+.sidebar {
+    padding: 20px
+}
+
+#portfolio {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 25px;
+}
+
+#portfolio:before {
+    content: '';
+    display: block;
+    height: 11px;
+    width: 12px;
+    background-color: #d7ab50;
+    position: absolute;
+    transform: rotate(70deg);
+    top: -2px;
+    left: 1px;
+    z-index: -1;
+}
+
+.portfolio .content {
+    width: 100%;
+    border-bottom: none;
+    border-right: 1px solid var(--orange);
+}
+
+#portfolio a {
+    color: var(--main);
+    background-color: var(--orange);
+    padding: 5px 10px 5px 15px;
+    font-weight: 500;
+    border-radius: 0 15px 15px 0;
+    transition: .3s;
+}
+
+#portfolio a:hover {
+    background-color: var(--main);
+    color: var(--orange);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.featured-img {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.featured-img a {
+    display: block;
+}
+
+.featured-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 1s ease-in-out;
+    filter: brightness(90%);
+}
+
+.featured-img:hover img {
+    transform: scale(1.5);
+    filter: brightness(100%);
+}
+
+@media screen and (max-width:768px) {
+
+    .about,
+    .content,
+    .info,
+    .sidebar {
+        width: 100%
+    }
+
+    .content {
+        order: 1
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .about,
+    .content,
+    .info,
+    .sidebar {
+        padding: 15px
+    }
+
+    .about {
+        flex-wrap: wrap
+    }
+
+    .profile,
+    .summary {
+        width: 100%
+    }
+
+    #portfolio {
+        left: unset;
+        right: 0;
+    }
+
+    #portfolio:before {
+        left: unset;
+        right: 0;
+        transform: rotate(-70deg);
+    }
+
+    #portfolio a {
+        border-radius: 15px 0 0 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }

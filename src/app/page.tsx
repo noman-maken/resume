@@ -1,113 +1,253 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { FaPlus , FaBriefcase, FaEnvelope, FaWhatsapp, FaLocationArrow, FaLinkedin, FaGithub, FaBrain, FaGraduationCap, FaChessKnight} from 'react-icons/fa';
+
+
+
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div id="resume">
+        <header id="header">
+            <div className="about">
+                <div className="profile">
+                    <div className="outline">
+                        <img src="./img/Noman.png" alt="Muhammad Noman Aslam"/>
+                    </div>
+                </div>
+                <div className="summary">
+                    <h1>Muhammad Noman Aslam</h1>
+                    <span>Web Developer</span>
+                    <p>I am an experienced web developer with a focus on backend development using core PHP. With over 4 years of experience, I specialize in creating robust and efficient server-side solutions. I have a deep understanding of core PHP and can effectively handle tasks such as database management, API integrations, and server-side scripting. I am skilled in developing dynamic and responsive websites, and I have the ability to convert various file formats into functional web components. I am currently seeking new opportunities to apply my backend development skills and contribute to the success of projects as a web developer.
+                    </p>
+                </div>
+            </div>
+            <div className="info">
+                <ul>
+                    <li>
+                        <div className="icon">
+                          <FaEnvelope/>
+                        </div>
+                        <a href="mailto:mnomanaslam6@gmail.com">mnomanaslam6@gmail.com</a>
+                    </li>
+                    <li>
+                        <div className="icon">
+                            <FaWhatsapp />
+                        </div>
+                        <a href="https://wa.me/+923416902120?text=Greetings, Muhammad Noman Aslam">+923416902120</a>
+                    </li>
+                    <li>
+                        <div className="icon">
+                            <FaLocationArrow/>
+                        </div>
+                        <address>Lahore, Punjab Pakistan</address>
+                    </li>
+                    <li>
+                        <div className="icon">
+                           <FaLinkedin/>
+                        </div>
+                        <a href="https://pk.linkedin.com/in/muhammad-noman-aslam-maken-2ab81b178">Muhammad Noman Aslam</a>
+                    </li>
+                    <li>
+                        <div className="icon">
+                            <FaGithub/>
+                        </div>
+                        <a href="https://github.com/noman-maken">noman-maken</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main id="main">
+            <div className="content">
+                <div className="title">
+                    <div className="icon">
+
+                    < FaBriefcase/>
+
+                    </div>
+                    <h2>WORK EXPERIENCE</h2>
+                </div>
+              
+              <div className="experience">
+                <h3 className="universal-title">PHP Developer (Internship)</h3>
+                <span className="universal-date">12-09-2018 to 01-04-2019</span>
+                <ul className="details">
+                  <li>Gained valuable experience in designing, developing, and maintaining web applications using core PHP</li>
+                  <li>Prepared for a successful career in web development</li>
+                </ul>
+              </div>
+              <div className="experience">
+                <h3 className="universal-title">PHP Developer</h3>
+                <span className="universal-date">03-05-2019 to 01-02-2020</span>
+                <ul className="details">
+                  <li>Designed and developed web applications for various clients</li>
+                  <li>Wrote clean and efficient code</li>
+                  <li>Integrated payment gateways</li>
+                  <li>Worked collaboratively with cross-functional teams for seamless front-end and back-end integration</li>
+                  <li>Stayed up-to-date with the latest industry trends and technologies</li>
+                  <li>Exceeded client expectations with high-quality work</li>
+                </ul>
+              </div>
+              <div className="experience">
+                <h3 className="universal-title">PHP and WordPress Website Developer</h3>
+                <span className="universal-date">03-05-2019 to 01-02-2020</span>
+                <ul className="details">
+                  <li>Focused on WordPress website development</li>
+                  <li>Created custom themes and plugins</li>
+                  <li>Utilized WordPress tools for optimal website performance</li>
+                  <li>Worked on PHP-based web development projects</li>
+                  <li>Created dynamic and responsive websites using MySQL and JavaScript</li>
+                </ul>
+              </div>
+              <div className="experience">
+                <h3 className="universal-title">PHP Developer</h3>
+                <span className="universal-date">17-08-2021 to 10-01-2023</span>
+                <ul className="details">
+                  <li>Design, develop, and maintain web applications using core PHP</li>
+                  <li>Integrate databases and payment gateways</li>
+                  <li>Collaborate with cross-functional teams</li>
+                  <li>Stay updated with the latest industry trends</li>
+                  <li>Continuous improvement of skills to meet or exceed client expectations</li>
+                </ul>
+              </div>
+
+              <div className="experience">
+                <h3 className="universal-title">Full Stack Developer at THE VISAMTION</h3>
+                <span className="universal-date">17-03-2023 to Ongoing</span>
+                <ul className="details">
+                <li>Designing, developing, and maintaining full-stack web applications using core PHP</li>
+                <li>Integrating databases, payment gateways, and APIs</li>
+                <li>Collaborating with cross-functional teams to ensure seamless integration and functionality</li>
+                <li>Implementing Gmail synchronization and integration</li>
+                <li>Developing and maintaining company portals</li>
+                <li>Creating and customizing WordPress websites</li>
+                <li>Staying updated with the latest industry trends and technologies</li>
+                <li>Continuously improving skills to meet and exceed client expectations</li>
+
+                </ul>
+              </div>
+            
+            <br></br>
+                <div className="additional-skills">
+                    <div className="title">
+                        <div className="icon">
+                           <FaPlus />
+                        </div>
+                        <h2>ADITTIONAL SKILLS</h2>
+                    </div>
+                    <ul className="skills-list">
+                    <li>jQuery</li>
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                    <li>WordPress</li>
+                    <li>API Integration</li>
+                    <li>Payment Integration</li>
+                    <li>MySQL</li>
+                    <li>TypeScript</li>
+
+                    </ul>
+                </div>
+            </div>
+            <aside className="sidebar">
+                <div className="title">
+                    <div className="icon">
+                        <FaBrain/>
+                    </div>
+                    <h2>SKILLS</h2>
+                </div>
+                <div className="skills">
+                    <div className="html">
+                        <h3 className="skill-title">HTML5</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                    <div className="css">
+                        <h3 className="skill-title">CSS3</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                    <div className="javascript">
+                        <h3 className="skill-title">JAVASCRIPT</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                    
+                    <div className="php">
+                        <h3 className="skill-title">PHP</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                   
+                    <div className="sql">
+                        <h3 className="skill-title">SQL</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                    <div className="wp">
+                        <h3 className="skill-title">WORDPRESS</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                    <div className="ai">
+                        <h3 className="skill-title">Artificial Intelligence</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                    <div className="ai">
+                        <h3 className="skill-title">Next JS</h3>
+                        <div className="progress-outline">
+                            <div className="progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="education">
+                    <div className="title">
+                        <div className="icon">
+                            <FaGraduationCap/>
+                        </div>
+                        <h2>EDUCATION</h2>
+                    </div>
+                    <div className="edu-box">
+                        <h3 className="universal-title">BS in Software Engineering</h3>
+                        <h4 className="universal-name" data-text="(Continue)">Virtual University of Pakistan </h4>
+                        <span className="universal-date">07/2019 - ONGOING (Final Semester)</span>
+                    </div>
+                </div>
+                <div className="interest">
+                    <div className="title">
+                        <div className="icon">
+                            <FaChessKnight/>
+                        </div>
+                        <h2>INTEREST</h2>
+                    </div>
+                    <div className="interest-list">
+
+                    <ul className="skills-list">
+                    <li>Learn Coding</li>
+                    <li>Open Source Contributions</li>
+                    <li>Tech Blogging</li>
+                    <li>Continuous Learning</li>
+                    <li>Problem Solving</li>
+                    <li>Work on Complex Tasks</li>
+                    
+
+                    </ul>
+                       
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <div id="portfolio">
+            <Link href="./portfolio">Portfolio</Link>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
