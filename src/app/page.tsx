@@ -13,7 +13,7 @@ export default function Home() {
             <div className="about">
                 <div className="profile">
                     <div className="outline">
-                        <img src="./img/Noman.png" alt="Muhammad Noman Aslam"/>
+                        <img src="./img/Noman.jpg" alt="Muhammad Noman Aslam Maken"/>
                     </div>
                 </div>
                 <div className="summary">
