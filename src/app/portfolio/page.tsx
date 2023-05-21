@@ -67,14 +67,26 @@ const portfolio = () =>{
                     <div className="item">
                     <div className="featured-img">
                             <Link href="#">
-                                <img src="./img/1.png"
+                                <img src="./img/1.jpg"
                                     alt="Muhammad Noman Aslam - Portfolio" />
                             </Link>
                         </div>
                         <h3 className="universal-title">ITSOLPRO</h3>
                     </div>
                     
+                    <div className="item">
+                    <div className="featured-img">
+                            <Link href="#">
+                                <img src="./img/2.jpg"
+                                    alt="Muhammad Noman Aslam - Portfolio" />
+                            </Link>
+                        </div>
+                        <h3 className="universal-title">ITSOL</h3>
+                    </div>
+                    
                 </div>
+
+                
             </div>
         </main>
         <div id="portfolio">
