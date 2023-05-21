@@ -1,4 +1,4 @@
-import { FaPlus , FaBriefcase, FaEnvelope, FaWhatsapp, FaLocationArrow, FaLinkedin, FaGithub, FaBrain, FaGraduationCap, FaChessKnight} from 'react-icons/fa';
+import { FaEnvelope, FaWhatsapp, FaLocationArrow, FaLinkedin, FaGithub} from 'react-icons/fa';
 
 const Header = () => {
     return(

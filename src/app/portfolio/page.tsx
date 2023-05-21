@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaPlus , FaBriefcase, FaEnvelope, FaWhatsapp, FaLocationArrow, FaLinkedin, FaGithub, FaBrain, FaGraduationCap, FaChessKnight} from 'react-icons/fa';
+import { FaBriefcase} from 'react-icons/fa';
 import Header from '@/views/header'
 
 
@@ -7,7 +7,7 @@ const portfolio = () =>{
 
     return (
         <div id="resume" className="portfolio">
-       <Header/>
+             <Header/>
         <main id="main">
             <div className="content">
                 <div className="title">
