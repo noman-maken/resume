@@ -105,13 +105,13 @@ export default function Home() {
                     </div>
                     <div className="skills">
                         <div className="html">
-                            <h3 className="skill-title">HTML5</h3>
+                            <h3 className="skill-title">HTML</h3>
                             <div className="progress-outline">
                                 <div className="progress"></div>
                             </div>
                         </div>
                         <div className="css">
-                            <h3 className="skill-title">CSS3</h3>
+                            <h3 className="skill-title">CSS</h3>
                             <div className="progress-outline">
                                 <div className="progress"></div>
                             </div>
