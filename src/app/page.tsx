@@ -20,13 +20,39 @@ export default function Home() {
                     </div>
 
                     <div className="experience">
-                        <h3 className="universal-title">PHP Developer (Internship)</h3>
-                        <span className="universal-date">12-09-2018 to 01-04-2019</span>
+                        <h3 className="universal-title">Full Stack Developer at THE VISAMTION</h3>
+                        <span className="universal-date">17-03-2023 to Ongoing</span>
                         <ul className="details">
-                            <li>Gained valuable experience in designing, developing, and maintaining web applications using core PHP</li>
-                            <li>Prepared for a successful career in web development</li>
+                            <li>Designing, developing, and maintaining full-stack web applications using core PHP</li>
+                            <li>Integrating databases, payment gateways, and APIs</li>
+                            <li>Collaborating with cross-functional teams to ensure seamless integration and functionality</li>
+                            <li>Developing and maintaining company portals</li>
+                            <li>Creating and customizing WordPress websites</li>
+
                         </ul>
                     </div>
+
+                    <div className="experience">
+                        <h3 className="universal-title">PHP Developer</h3>
+                        <span className="universal-date">17-08-2021 to 10-01-2023</span>
+                        <ul className="details">
+                            <li>Design, develop, and maintain web applications using core PHP</li>
+                            <li>Integrate databases and payment gateways</li>
+                            <li>Collaborate with cross-functional teams</li>
+                        </ul>
+                    </div>
+
+                    <div className="experience">
+                        <h3 className="universal-title">PHP and WordPress Website Developer</h3>
+                        <span className="universal-date">03-05-2019 to 01-02-2020</span>
+                        <ul className="details">
+                            <li>Focused on WordPress website development</li>
+                            <li>Utilized WordPress tools for optimal website performance</li>
+                            <li>Worked on PHP-based web development projects</li>
+                            <li>Created dynamic and responsive websites</li>
+                        </ul>
+                    </div>
+
                     <div className="experience">
                         <h3 className="universal-title">PHP Developer</h3>
                         <span className="universal-date">03-05-2019 to 01-02-2020</span>
@@ -35,48 +61,19 @@ export default function Home() {
                             <li>Wrote clean and efficient code</li>
                             <li>Integrated payment gateways</li>
                             <li>Worked collaboratively with cross-functional teams for seamless front-end and back-end integration</li>
-                            <li>Stayed up-to-date with the latest industry trends and technologies</li>
-                            <li>Exceeded client expectations with high-quality work</li>
                         </ul>
                     </div>
-                    <div className="experience">
-                        <h3 className="universal-title">PHP and WordPress Website Developer</h3>
-                        <span className="universal-date">03-05-2019 to 01-02-2020</span>
-                        <ul className="details">
-                            <li>Focused on WordPress website development</li>
-                            <li>Created custom themes and plugins</li>
-                            <li>Utilized WordPress tools for optimal website performance</li>
-                            <li>Worked on PHP-based web development projects</li>
-                            <li>Created dynamic and responsive websites using MySQL and JavaScript</li>
-                        </ul>
-                    </div>
-                    <div className="experience">
-                        <h3 className="universal-title">PHP Developer</h3>
-                        <span className="universal-date">17-08-2021 to 10-01-2023</span>
-                        <ul className="details">
-                            <li>Design, develop, and maintain web applications using core PHP</li>
-                            <li>Integrate databases and payment gateways</li>
-                            <li>Collaborate with cross-functional teams</li>
-                            <li>Stay updated with the latest industry trends</li>
-                            <li>Continuous improvement of skills to meet or exceed client expectations</li>
-                        </ul>
-                    </div>
+                    
 
                     <div className="experience">
-                        <h3 className="universal-title">Full Stack Developer at THE VISAMTION</h3>
-                        <span className="universal-date">17-03-2023 to Ongoing</span>
+                        <h3 className="universal-title">PHP Developer (Internship)</h3>
+                        <span className="universal-date">12-09-2018 to 01-04-2019</span>
                         <ul className="details">
-                            <li>Designing, developing, and maintaining full-stack web applications using core PHP</li>
-                            <li>Integrating databases, payment gateways, and APIs</li>
-                            <li>Collaborating with cross-functional teams to ensure seamless integration and functionality</li>
-                            <li>Implementing Gmail synchronization and integration</li>
-                            <li>Developing and maintaining company portals</li>
-                            <li>Creating and customizing WordPress websites</li>
-                            <li>Staying updated with the latest industry trends and technologies</li>
-                            <li>Continuously improving skills to meet and exceed client expectations</li>
-
+                            <li>Gained valuable experience in designing, developing, and maintaining web applications using core PHP</li>
+                            <li>Prepared for a successful career in web development</li>
                         </ul>
                     </div>
+                   
 
                     <br></br>
                     <div className="additional-skills">
